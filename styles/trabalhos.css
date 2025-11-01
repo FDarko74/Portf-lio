@@ -1,0 +1,188 @@
+@import url(global.css);
+
+#job {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block: 6rem;
+    gap: 8px;
+
+    h2 {
+        font: var(--Subtitle);
+        color: var(--Principal-red);
+    }
+
+    h1 {
+        font: var(--Title-md);
+        color: var(--Base-100);
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        margin-top: 45px;
+
+        .card {
+            background: var(--Base-400);
+            padding: 12px;
+            border-radius: 12px;
+
+            img {
+                width: 100%;
+                border-radius: 8px;
+                margin-bottom: 12px;
+            }
+
+            h3 {
+                font: var(--Title-sm);
+                color: var(--Base-100);
+                margin-bottom: 8px;
+            }
+
+            P {
+                font: var(--Text-sm);
+                color: var(--Base-200);
+            }
+        }
+        .card:hover {
+            transform: scale(1.05);
+            transition: all 0.3s ease-in-out;
+            border: 1px solid var(--Base-100);
+        }
+    }
+}
+
+#serviços {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding-block: 5.5rem 7.6rem;
+    background-color: var(--Base-600);
+
+    h2 {
+        font: var(--Subtitle);
+        color: var(--Principal-red);
+    }
+
+    h1 {
+        font: var(--Title-md);
+        color: var(--Base-100);
+    }
+
+    section {
+        display: grid;
+        margin-top: 56px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+
+        .card-serviço {
+            padding: 20px;
+            border: 1px solid var(--Base-300);
+            border-style: dashed;
+            border-radius: 8px;
+
+            h3 {
+                font: var(--Title-sm);
+                color: var(--Base-100);
+                margin-bottom: 8px;
+            }
+
+            P {
+                font: var(--Text-sm);
+                color: var(--Base-200);
+            }
+        }
+    }
+}
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-block: 6rem;
+
+    h2 {
+        font: var(--Subtitle);
+        color: var(--Principal-purple);
+    }
+
+    h1 {
+        font: var(--Title-md);
+        color: var(--Base-100);
+    }
+
+    p {
+        font: var(--Text-sm);
+        color: var(--Base-200);
+        margin-top: 12px;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+        margin-block: 1rem;
+        flex-direction: column;
+
+        li {
+            display: grid;
+            grid-template-columns: 50px 300px 1fr;
+            align-items: center;
+            background-color: var(--Base-400);
+            border-radius: 1rem;
+            padding: 0.4rem 0.8rem;
+
+            svg {
+                width: 24px;
+                height: 24px;
+                margin-inline: 8px;
+                color: var(--Base-300);
+            }
+
+            p {
+                font: var(--Text-sm);
+                color: var(--Base-200);
+                margin-block: auto;
+                margin-right: 200px;
+            }
+            button{
+                background: inherit;
+                border: none;
+                cursor: pointer;
+                align-items: center;
+                justify-items: center;
+                Img{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+        li:hover:nth-child(1){
+            border: 1px solid var(--Principal-blue);
+            svg{
+                color: var(--Principal-blue);
+            }
+        }
+        li:hover:nth-child(2){
+            border: 1px solid var(--Principal-purple);
+            svg{
+                color: var(--Principal-purple);
+            }
+        }
+        li:hover:nth-child(3){
+            border: 1px solid var(--Principal-green);
+            svg{
+                color: var(--Principal-green);
+            }
+        }
+        li:hover:nth-child(4){
+            border: 1px solid var(--Principal-yellow);
+            svg{
+                color: var(--Principal-yellow);
+            }
+        }
+}
+}

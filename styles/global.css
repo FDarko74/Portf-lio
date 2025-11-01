@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--Base-500);
+}
+
+:root {
+    --Title-lg: bold 56px/120% "Asap", sans-serif;
+    --Title-md: bold 24px/120% "Asap", sans-serif;
+    --Title-sm: bold 16px/120% "Asap", sans-serif;
+
+    --Subtitle: normal 20/120% 'Inconsolata', monospace;
+
+    --Text-md: normal 16px/140% 'Maven Pro', sans-serif;
+    --Text-sm: normal 14px/140% 'Maven Pro', sans-serif;
+
+    /* Cores */
+    --Principal-red: #E3646E;
+    --Principal-purple: #BB72E9;
+    --Principal-blue: #3996DB;
+    --Principal-green: #82BC4F;
+    --Principal-yellow: #EABD5F;
+    --Base-100: #E2E4E9;
+    --Base-200: #C0C4CE;
+    --Base-300: #878EA1;
+    --Base-400: #292C34;
+    --Base-500: #16181D;
+    --Base-600: #0D0E11;
+}

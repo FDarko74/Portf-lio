@@ -1,0 +1,113 @@
+@import url(global.css);
+
+header {
+    background-image: url('../Assets/Background_Intro.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 7.5rem 10.18rem;
+
+    .perfil{
+        position: relative;
+        img:first-of-type{
+        width: 15rem;
+        height: 15rem;
+        border-radius: 50%;
+        padding: 5px;
+        border: 3px solid var(--Principal-red);
+        margin-bottom: 4rem;
+        }
+        img:last-of-type{
+            position: absolute;
+            width: 8rem;
+            height: 8rem;
+            margin-left: -6rem;
+            margin-top: 9rem;
+        }
+    }
+    .perfil:hover{
+        img:first-of-type{
+            box-shadow: 0 0 15px var(--Principal-red);
+        }
+    }
+
+    h2 {
+        color: var(--Base-200);
+        font: var(--Title-md);
+        margin-block: 0 8px;
+
+        strong {
+            color: var(--Principal-red);
+        }
+    }
+
+    h1 {
+        font: var(--Title-lg);
+        color: var(--Base-100);
+        margin-block: 0 20px;
+    }
+
+    h3 {
+        font: var(--Title-sm);
+        color: var(--Base-300);
+        margin-inline: auto;
+        padding-inline: 1rem;
+        text-align: center;
+    }
+
+    section {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 80px;
+        padding-inline: 9rem;
+
+        li {
+            display: inherit;
+            list-style: none;
+            background-color: var(--Base-400);
+            border-radius: 999px;
+            padding-inline: 1rem;
+
+            img {
+                width: 30px;
+                height: 30px;
+                margin-block: 4px;
+            }
+
+            p {
+                font: var(--Text-md);
+                color: var(--Base-200);
+                padding: 9px 16px 9px 8px;
+            }
+        }
+        li:hover {
+            transform: scale(1.05);
+            transition: all 0.3s ease-in-out;
+            border: 1px solid var(--Base-100);
+        }
+    }
+    button {
+        background: none;
+        border: none;
+        margin-top: 4rem;
+        cursor: pointer;
+
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+@media(max-width: 1150px) {
+    header{
+        section{
+        padding: 0;
+        flex-direction: column;
+        li{
+            justify-content: center;
+            gap: 3rem;
+            padding-inline: 0;
+            margin-bottom: 0.3rem;
+        }
+    }
+}}
